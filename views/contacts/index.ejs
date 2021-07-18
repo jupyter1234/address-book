@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+    <%- include('../partials/nav') %>
+    <div class="contact contact-index"></div>
+    <h2>Index</h2>
+    <ul>
+        <% contacts.forEach((contact) => { %>
+        <li>
+            <%= contact.name %>
+        </li>
+        <% }) %>
+
+    </ul>
+</body>
+
+</html>
